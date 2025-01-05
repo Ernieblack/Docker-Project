@@ -1,6 +1,8 @@
 
-**This `README.md` provides a complete guide for your `docker-project` directory, including explanations of all files, usage instructions, and troubleshooting steps.**
+# Docker Flask-Redis Counter Project
 
+**This project demonstrates how to use Docker and Docker Compose to deploy a simple Flask application that connects to a Redis instance.
+The Flask app increments and displays a visit counter stored in Redis.**
 
 # Flask Redis Counter
 
