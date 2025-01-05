@@ -47,32 +47,42 @@ docker-compose up --build
 5. Open your browser and go to: http://localhost:5000
 
 Configuration
+
 The application relies on the following environment variables for Redis configuration:
 
-REDIS_HOST: The Redis host (default: redis).
+REDIS_HOST: 
+
+The Redis host (default: redis).
 You can customize these in the docker-compose.yml file under the web service.
 
 Example Output
+
 Visiting the root URL (/) will return:
 Hello, World! You have visited 1 times.
 The visit count will increase with each reload.
 
 Files Overview
+
 app.py
 Connects to Redis using the host specified in the REDIS_HOST environment variable.
 Provides a simple / route to display the visit count.
 
 requirements.txt
+
 Contains the Python dependencies:
+
 flask
 redis
 
 Dockerfile
+
 Defines how to build the Docker image for the Flask application.
 
 docker-compose.yml
+
 Defines a multi-container setup with Flask and Redis.
 Troubleshooting
+
 Redis Connection Issues:
 
 Ensure Redis is running and accessible at the host specified in REDIS_HOST.
