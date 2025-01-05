@@ -37,12 +37,14 @@ Every time you access the application, the counter increments, and the current c
 1. Clone the repository:
    
    git clone https://github.com/Ernieblack/Docker-Project.git
+   
    cd project
    
-2. Build and start the containers:
+3. Build and start the containers:
+
 docker-compose up --build
 
-3. Open your browser and go to: http://localhost:5000
+5. Open your browser and go to: http://localhost:5000
 
 Configuration
 The application relies on the following environment variables for Redis configuration:
